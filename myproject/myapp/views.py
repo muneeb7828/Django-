@@ -6,12 +6,13 @@ def Index(request):
                                                   # aur ham render(dikhane) ke liye iska use nahi templates ka use karenge
 
 
-def About(request):
-    return HttpResponse("this is aboutpage") 
-
+def About(request):                                       # is parameter me path ka name ata he
+    contex={"fname":"muneeb","lname":"ur rehman"}         # is tarike se variable daal sakte html me aur ye dict hi hona chahiye
+    return render(request,'about.html',contex)            # is tarike se ham templates ko render karte he
+    
 
 def Contact(request):
-    return HttpResponse("this is contactpage") 
+    return render(request,'contact.html') 
 
 
 

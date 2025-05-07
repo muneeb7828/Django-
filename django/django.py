@@ -42,12 +42,36 @@
 # commands after go to myproject
 # python manage.py makemigrations
 # python manage.py migrate
+# python manage.py  createsuperuser   # is command se user ka username email password set kar sakte he
 # python manage.py runserver   # ye server ko start karne ke liye hoti he 
 
 # extentions in django
 # django
 # thunder client
 
+# myproject setting.py
+
+# INSTALLED_APPS = [
+#     'django.contrib.admin',
+#     'django.contrib.auth',
+#     'django.contrib.contenttypes',
+#     'django.contrib.sessions',
+#     'django.contrib.messages',
+#     'django.contrib.staticfiles',
+#     'rest_framework',
+#     'myapp',
+# ]
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME':'project',
+#         'USER':'root',
+#         'PASSWORD':'Muneebmysql@12345',
+#         'HOST':'localhost',
+#         'PORT':'3306'
+#     }
+# }
 
 
 # project and app in django 
@@ -64,10 +88,11 @@
 # aur ham myproject me 2 folder banayenge templates aur static
 
 # static
-# isme saari static files ayengi static files images aur dusri files ke liye hoti he 
+# isme saari static files ayengi aur static files images aur dusri files ke liye hoti he 
 # jo koi bhi aapke server pe aake dekh sakta he
 
 # templates
+# setting.py is file me TEMPLATES ke DIRS iske andar agar ye BASE_DIR / "template" likhenge to template ki files ko bhi use kar payenge 
 
 
 
