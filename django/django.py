@@ -5,6 +5,7 @@
 # aur iske andar database connector hota he
 # aur iske andar url dispatcher hota he jo ki alag alag page ko dikha neme madad karta he aur alag alag views ko bhi manage karta he
 # aur isme project ek hota he lekin apps bohot sare bana sakte he
+# aur django default authentication system ke sath ata he is liye ham django ko use karte he
 
 
 # mvt architecture of django
@@ -40,7 +41,7 @@
 # python -m django startapp myapp1
 
 # commands after go to myproject
-# python manage.py makemigrations
+# python manage.py makemigrations     # ye check karta he kuch change hua database me ke nahi
 # python manage.py migrate
 # python manage.py  createsuperuser   # is command se user ka username email password set kar sakte he
 # python manage.py runserver   # ye server ko start karne ke liye hoti he 
@@ -90,23 +91,26 @@
 # static
 # isme saari static files ayengi aur static files images aur dusri files ke liye hoti he 
 # jo koi bhi aapke server pe aake dekh sakta he
+# is tarike se kisi bhi static file ko get kar sakte he  <img src="static/image.jpg" alt="">
 
 # templates
 # setting.py is file me TEMPLATES ke DIRS iske andar agar ye BASE_DIR / "template" likhenge to template ki files ko bhi use kar payenge 
 
 
+# templates inheritance
+# agar ek page ke component ko dusre page ke component ke sath dikhana chahte he to iska use karenge
+# isme hota he extends and block body and block title
 
+# extends
+# ye tab use karte he jab bhi kisi component ko inherit karna ho to aur ye he iska syntax {% extends 'base.html' %}
 
+# block body
+# ye tab use karte he jab inherit karne ke baad kuch karna ho to isme karenge aur isko parent html me bhi likhte he position ke liye 
+# aur ye he iska syntax {% block body %} {% endblock body %}
 
-
-
-
-
-
-
-
-
-
+# block title
+# ye bhi block body ki tarah hota he bas ye title ke andar use hota he
+# aur ye he iska syntax {% block title %} {% endblock title %} 
 
 
 

@@ -17,6 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+# is tarike se header aur title change kar sakte he iska
+admin.site.site_header = "muneeb ur rehman admin" 
+admin.site.site_title = "django"
+admin.site.index_title = 'Site administration'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('myapp.urls'))            # ye include method ye import ka bhi kaam kar raha he

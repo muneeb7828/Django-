@@ -131,5 +131,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # added manually
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static1",     # yaha jis bhi folder ki files ko dikhana he uska naam likhenge fir path me likhenge to ajayga
+    BASE_DIR / "static1",     # yaha jis bhi folder ko static rakhna he uska naam likhenge fir un saari files ko staic ke dekh sakte he
 ]
