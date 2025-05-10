@@ -20,3 +20,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# ye starting point file he aur ye hi environment variable set karti he aur production me sabse phele ye hi file call hoti he

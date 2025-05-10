@@ -41,8 +41,8 @@
 # python -m django startapp myapp1
 
 # commands after go to myproject
-# python manage.py makemigrations     # ye check karta he kuch change hua database me ke nahi
-# python manage.py migrate
+# python manage.py makemigrations     # ye changes ko store karleta he file me
+# python manage.py migrate            # ye jo makemigrations se save hua he usko database me save kar deta he 
 # python manage.py  createsuperuser   # is command se user ka username email password set kar sakte he
 # python manage.py runserver   # ye server ko start karne ke liye hoti he 
 

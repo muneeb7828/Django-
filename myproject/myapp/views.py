@@ -1,4 +1,6 @@
 from django.shortcuts import render,HttpResponse  # isme jo render he ye templates ko render karne ke liye he
+from datetime import datetime
+from myapp.models import Contact                              # isse sab import ho jate he
 
 # Create your views here.
 def Index(request):
@@ -16,9 +18,17 @@ def About(request):                                       # is parameter me path
     
 
 def Contact(request):
-    return render(request,'contact.html') 
-
-
+    if (request.method == "POST"):      # ye POST '/contact' return karta he
+        name=request.POST.get("name")
+        email=request.POST.get("email")
+        phone=request.POST.get("phonenumber")
+        desc=request.POST.get("desc")
+        date=datetime.today()
+        print(name,email,phone)
+        contact=Contact(name=name,email=email,phone=phone,desc=desc,date=date)
+        contact.save()
+    return render(request,'contact.html')
+    
 
 
 
