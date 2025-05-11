@@ -24,6 +24,9 @@ admin.site.index_title = 'Site administration'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('myapp.urls'))            # ye include method ye import ka bhi kaam kar raha he
+    path('',include('myapp.urls')),            # ye include method ye import ka bhi kaam kar raha he
+
+    
+    path("__reload__/", include("django_browser_reload.urls")),   # ye hi path he jo reload ko call karta he aur ye path sabse last me likhenge kyuki ye kuch chize bhejta he to time lag sakta he
 ]
 

@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+# yahan table create karte he
 
 class Course(models.Model):
     title = models.CharField(max_length=100)
@@ -15,4 +16,3 @@ class Contact(models.Model):
     date=models.DateField()
 
 
-    

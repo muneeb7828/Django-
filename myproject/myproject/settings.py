@@ -39,7 +39,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'myapp',
+    'tailwind',
+    'theme',
+    'django_browser_reload',
 ]
+
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"       # r"" ye raw string hoti he aur ye backslash ko handle karne ke liye hoti he
+TAILWIND_APP_NAME='theme'
+INTERNAL_IPS=['127.0.0.1']
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -49,6 +57,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'django_browser_reload.middleware.BrowserReloadMiddleware',       # added manually
 ]
 
 ROOT_URLCONF = 'myproject.urls'
@@ -131,5 +141,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # added manually
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static1",     # yaha jis bhi folder ko static rakhna he uska naam likhenge fir un saari files ko static ke dekh sakte he
+    BASE_DIR / "static1",     # yaha jis bhi folder ko static rakhna he uska naam likhenge fir un saari files ko static ke sath dekh sakte he
 ]
