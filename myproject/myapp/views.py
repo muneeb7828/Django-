@@ -5,6 +5,8 @@ from django.contrib import messages
 from .models import ChaiVarity
 
 # Create your views here.
+
+
 def Index(request):
     return HttpResponse("this is homepage")       # HttpResponse ye method string ko render(dikhane) ke liye hota he
                                                   # aur ham render(dikhane) ke liye iska use nahi templates ka use karenge
@@ -35,7 +37,16 @@ def contact(request):
     return render(request,'contact.html')
     
 
+
+
 def all_chais(request):
     chais=ChaiVarity.objects.all()
     print(chais,'muneeb')
-    return render(request,'chai.html',{'chais':chais})
+    return render(request,'chais.html',{'chais':chais})
+
+def chais_description(request,id):                 # this is how we create dynamic page for single object (data)
+    chai=ChaiVarity.objects.filter(id=id)            
+    print(chai,'muneeb')
+    if chai.exists():
+        return render(request,'chai.html',{'chai':chai[0]})     # ye list return kar raha he isliye ese kiye he
+    

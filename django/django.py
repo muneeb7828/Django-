@@ -163,7 +163,7 @@
 
 
 
-# user in django
+# User in django
 # jab bhi user banate he to admin panel pe staff status no show hota he iska matlab vo admin panel login nahi kar sakta aur superuser status no show ho to vo admin panel pe kuch bhi nahi dekh sakta
 # bas superuser hi dekh sakta he
 
@@ -179,6 +179,8 @@
 # login logout signup of user
 # teeno case me post method use hoga kyuke teeno me hi khuch bhej rahe he
 
+# isme jo username hota he isko kese bhi get kar sakte he kyuki ye case insensitive hota he u
+# jis bhi project se model banate he usi se kholte he to models show hote he
 
 
 # model view set

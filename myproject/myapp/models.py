@@ -31,6 +31,7 @@ class ChaiVarity(models.Model):
     image=models.ImageField(upload_to='chaifolder/')             # ye constraint batata he jo images hongi vo kis folder me rakhi jayengi
     date_added=models.DateTimeField(default=timezone.now)        # ye default isliye diya he taki jab bhi model add ho to abhi ka time add ho
     Type=models.CharField(max_length=2,choices=Chai_type_choice) # yaha jo max length he phele index ke liye he
+    description=models.TextField(default="")
 
 
     def __str__(self):

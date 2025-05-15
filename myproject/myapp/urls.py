@@ -9,6 +9,7 @@ urlpatterns = [
     path('contact',views.contact,name="contact"),
     path('index',views.Index2,name="index"),
     path('chais',views.all_chais,name="chais"),
+    path('chais/<int:id>',views.chais_description,name="chai"),
     # path('services',views.services,name="services"),   # ye nahi chalega taki is naam ka function nahi he
 
 ]

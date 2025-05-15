@@ -31,5 +31,3 @@ urlpatterns = [
     
     path("__reload__/", include("django_browser_reload.urls")),   # ye hi path he jo reload ko call karta he aur ye path sabse last me likhenge kyuki ye kuch chize bhejta he to time lag sakta he
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)   # ye method batayga isko kis tarah load karna he aur isko document_root bhi batana padta he taki MEDIA_URL path pe document_root ye show ho
-
-
