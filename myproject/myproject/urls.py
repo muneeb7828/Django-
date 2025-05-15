@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.conf import settings                     # ye setting.py ko lane ke liye he
+from django.conf.urls.static import static           # ye funtion isliye import kiya he kyuki settings me se MEDIA_URL ko isme load karne ke liye
 
 # is tarike se header aur title change kar sakte he iska
 admin.site.site_header = "muneeb ur rehman admin" 
@@ -24,9 +26,10 @@ admin.site.index_title = 'Site administration'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('myapp.urls')),            # ye include method ye import ka bhi kaam kar raha he
+    path('',include('myapp.urls')),            # ye include method kya karta he ki ye check karta settings me myapp ko agar he to uska urls.py de deta he
 
     
     path("__reload__/", include("django_browser_reload.urls")),   # ye hi path he jo reload ko call karta he aur ye path sabse last me likhenge kyuki ye kuch chize bhejta he to time lag sakta he
-]
+] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)   # ye method batayga isko kis tarah load karna he aur isko document_root bhi batana padta he taki MEDIA_URL path pe document_root ye show ho
+
 

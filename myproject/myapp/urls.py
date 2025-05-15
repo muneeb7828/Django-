@@ -8,6 +8,7 @@ urlpatterns = [
     path('about',views.About,name="about"),
     path('contact',views.contact,name="contact"),
     path('index',views.Index2,name="index"),
+    path('chais',views.all_chais,name="chais"),
     # path('services',views.services,name="services"),   # ye nahi chalega taki is naam ka function nahi he
 
 ]

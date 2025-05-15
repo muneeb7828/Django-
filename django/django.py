@@ -44,7 +44,10 @@
 # python manage.py makemigrations     # ye changes ko store karleta he file me
 # python manage.py migrate            # ye jo makemigrations se save hua he usko database me save kar deta he 
 # python manage.py  createsuperuser   # is command se user ka username email password set kar sakte he
+# python manage.py changepassword <user>
 # python manage.py runserver   # ye server ko start karne ke liye hoti he 
+# python manage.py shell       # isse djangp ki command terminal pe chala sakte he
+# python -m pip install Pillow  # ye module he imagefield ke liye
 
 # extentions in django
 # django
@@ -59,19 +62,19 @@
 #     'django.contrib.sessions',
 #     'django.contrib.messages',
 #     'django.contrib.staticfiles',
-#     'rest_framework',
-#     'myapp',
+    # 'rest_framework',
+    # 'myapp',
 # ]
 
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME':'project',
-#         'USER':'root',
-#         'PASSWORD':'Muneebmysql@12345',
-#         'HOST':'localhost',
-#         'PORT':'3306'
-#     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME':'project',
+    #     'USER':'root',
+    #     'PASSWORD':'Muneebmysql@12345',
+    #     'HOST':'localhost',
+    #     'PORT':'3306'
+    # }
 # }
 
 # django html me agar html ke emmet use karna he to setting me jage emmet likhna he fir include language me item me django-html aur value me html likhna he
@@ -115,7 +118,11 @@
 # ye bhi block body ki tarah hota he bas ye title ke andar use hota he
 # aur ye he iska syntax {% block title %} default value {% endblock title %} 
 
+# for loop block
+# {% for message in messages %}  {% endfor %}
 
+# if else block
+# {% if messages %} {% endif %}
 
 # tailwind in django
 
@@ -135,4 +142,46 @@
 # jo hamne reload install kiya he isko bhi add karna hoga settings.py INSTALLED_APPS isme is name se 'django_browser_reload' aur settings.py middleware me 'django_browser_reload.middleware.BrowserReloadMiddleware' ye add karna hoga
 # fir uske baad myproject ke urls.py me sabse niche ye path add karna hoga path("__reload__/", include("django_browser_reload.urls")) kyuki ye hi reload ko call karega
 # aur production me ye use nahi karenge waha build hota he jo apne aap call kar deta he
+
+
+
+# django rest framework
+
+# ye ham isliye learn kar rahe he taki hame api's banani he aur banake frontend ko data bhejna he aur frontend react ho sakta ya kuch aur bhi
+
+# serializer in django
+# complex datatype (table) ko python datatype me convert karna fir usko json format me convert karne ko serialization bolte he
+
+# de-serializer in django
+# serializer isi ko opposite dardo to de-serializer bolte he yani json se python datatype fir complex datatype me convert karne ko bolte he
+
+# nested serializer
+# nested serializer matlab ek serializer me dusre serializer ko use karna yani 2 table he usme ek table dusre table se reference le rahi he to jo reference le rahi uska data bhi parent table me dikhane ko hi nested serializer bolte he
+# aur nested serializer bydefault read only hota he
+
+# stream
+
+
+
+# user in django
+# jab bhi user banate he to admin panel pe staff status no show hota he iska matlab vo admin panel login nahi kar sakta aur superuser status no show ho to vo admin panel pe kuch bhi nahi dekh sakta
+# bas superuser hi dekh sakta he
+
+# bad request
+# bad request tab aati jab object banane me khuch galti kari ho to json.parse me convert nahi ho pata
+
+# from django.contrib.auth.models import User    # isse  jo admin pe user hota he vo import vo import ho jata he
+# is User me jitne bhi user bane hote he vo sab user ke object (data) ajate he matlab ke ye jo User he ye database hi he jese Course model database he jisme sare object (data) hote he
+
+# from django.contrib.auth import authenticate,login,logout   # ye function user ko authenticate karne ke liye aur login or logout karne ke liye hota he
+# aur ye dono views me hi import karte he
+
+# login logout signup of user
+# teeno case me post method use hoga kyuke teeno me hi khuch bhej rahe he
+
+
+
+# model view set
+# class base set
+# JWT
 

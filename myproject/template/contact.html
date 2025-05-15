@@ -6,8 +6,8 @@
   <div class="container">
     <h1 class="text-center">contact us</h1>
     <form method="post" action="/contact">            <!--method isliye ilkh rahe he taki jo bhi users likhe vo sab post ho jaye database me aur action isliye he konse page ko post karna he-->       
-      {% csrf_token %}                                <!--ye isliye he taki user ek baar information bheje-->   
-    <div class="mb-3">
+      {% csrf_token %}                                <!--ye isliye he taki koi dusri website se form submit na kare-->   
+    <div class="mb-3"> 
         <label for="name" class="form-label">Name</label>
         <input type="text" class="form-control" id="name"name="name" placeholder="enter your name">
     </div>
@@ -18,7 +18,7 @@
       <div class="mb-3">
         <label for="phonenumber" class="form-label">Phone number</label>
         <input type="number" class="form-control" id="phonenumber" name="phonenumber" placeholder="enter your phone number">
-      </div>
+      </div>   
       <div class="mb-3">
         <label for="desc" class="form-label">Tell me about what you want to contact me for</label>
         <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
