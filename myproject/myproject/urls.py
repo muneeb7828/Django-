@@ -19,10 +19,12 @@ from django.urls import path,include
 from django.conf import settings                     # ye setting.py ko lane ke liye he
 from django.conf.urls.static import static           # ye funtion isliye import kiya he kyuki settings me se MEDIA_URL ko isme load karne ke liye
 
+
 # is tarike se header aur title change kar sakte he iska
 admin.site.site_header = "muneeb ur rehman admin" 
 admin.site.site_title = "django"
 admin.site.index_title = 'Site administration'
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

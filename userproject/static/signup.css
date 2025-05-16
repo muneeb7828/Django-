@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/signup.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <title>Document</title>
-</head>
-<style>
-  *{
+*{
 margin:0;
 padding:0;
 box-sizing:border-box;
@@ -152,45 +142,3 @@ margin-bottom:5px;
 text-align:start;
 color: red;
 }
-
-</style>
-<body>
-  
-<div className="container">
-
-    <div className="formbox">
-        <div className="div1">
-          <h1 className="h1">Sign Up</h1>
-          <div className="underline"></div>
-         </div>
-
-            <div className="inputgroup">
-               <div className="inputfild inputfild1">
-               <i className="fa-solid fa-user"></i>
-               <input type="text" placeholder="Username"/>
-               </div>
-               <div className="incorrectdetails">{formerrors.username}</div>
-
-                <div className="inputfild">
-                <i className="fa-solid fa-at"></i>   
-                <input type="email" placeholder="Email"/>
-                </div>
-                <div className="incorrectdetails">{formerrors.email}</div>
-                <div className="inputfild">
-                <i className="fa-solid fa-key"></i>    
-                <input type="password" placeholder="Password"/>
-                </div>
-                <div className="incorrectdetails">{formerrors.password}</div>                 
-                <p id="p">Passwordsuggetions<a href="#"> ClickHere</a></p>
-            </div>
-
-            <div className="div2">
-              <button className="btn signup">Sign Up</button><button className=" signin btn disable">Sign In</button>
-            </div> 
-    
-    </div>
-</div>
-      
-    
-</body>
-</html>

@@ -5,6 +5,7 @@ from myapp.models import *
 admin.site.register(Course)
 admin.site.register(Contact)
 admin.site.register(ChaiVarity)
+admin.site.register(Student)
 
 
 

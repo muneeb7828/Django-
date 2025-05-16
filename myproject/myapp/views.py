@@ -1,8 +1,13 @@
 from django.shortcuts import render,HttpResponse  # isme jo render he ye templates ko render karne ke liye he
+from rest_framework.response import Response
 from datetime import datetime
-from myapp.models import Contact                              # isse sab import ho jate he
+from myapp.models import Contact 
 from django.contrib import messages
 from .models import ChaiVarity
+from .models import Student
+from .serializer import *                                      # isse sab import ho jate he
+from rest_framework import viewsets 
+from rest_framework import status
 
 # Create your views here.
 
@@ -49,4 +54,43 @@ def chais_description(request,id):                 # this is how we create dynam
     print(chai,'muneeb')
     if chai.exists():
         return render(request,'chai.html',{'chai':chai[0]})     # ye list return kar raha he isliye ese kiye he
+    
+
+# viewset
+
+class StudentViewSet(viewsets.ViewSet):
+    def list(self,request):
+        stu=Student.objects.all()
+        serializer = StudentSerializer(stu,many=True)
+        return Response(serializer.data)
+
+
+    def retrieve(self,request,pk=None):                          # pk primary key
+        id= pk
+        if id is not None:
+          stu=Student.objects.get(id=id)
+          serializer = StudentSerializer(stu)
+          return Response(serializer.data)
+
+
+    def create(self,request):
+        serializer = StudentSerializer(data=request.data)           # iske funtion me kwags he isliye esa likha he
+        if serializer.is_valid():
+            serializer.save()    
+            return Response({'msg':'data created'}, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
+
+    def update(self,request,pk):
+        id =pk
+        stu=Student.objects.get(pk=id)
+        serializer = StudentSerializer(stu,data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({'msg':'data updated'})
+        return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
+
+    def destroy(self,request,pk):
+        stu=Student.objects.get(pk=pk)
+        stu.delete()
+        return Response({'msg':'data deleted'})
     

@@ -184,6 +184,17 @@
 
 
 # model view set
+# ye aur asaan database me data ko crud karna isme funtion ki jagah class ka us hota he aur isme sare views ek single class me rakhe jate he isi ko view set bolte he
+# aur isme alag agal url banane ki zarurat nahi padti isme router hota he agar usme class define kardi to url ka kaam router hi karlega
+# aur viewset  method get post aur bhi provide nahi karta ye actions provide karta he jiske andar list() get all records, create() create record, retrieve() get single record, update() update record, partial_update() update record partially, destroy() delete record, ye sab hote he jo ke method ka hi kaam karte he
+# from rest_framework import viewsets 
+# from rest_framework.routers import DefaultRouter    ye hi router banata he
+# aur jab bhi class banate he to viewsets.ViewSet is class ko inherit karna padta he
+# aur jab bhi viewset class banate he to isme basename,action,detail, ye attributes hote he
+# basename ye batata he jo bhi url name dete he
+# action ye konsa operation ho raha he list ho rahe ya create ho raha he
+# detail ye bolean return karta he
+
 # class base set
 # JWT
 
