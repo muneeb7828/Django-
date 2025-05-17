@@ -183,8 +183,11 @@
 # jis bhi project se model banate he usi se kholte he to models show hote he
 
 
+# class base view set
+# isi me model view set hota he
+
 # model view set
-# ye aur asaan database me data ko crud karna isme funtion ki jagah class ka us hota he aur isme sare views ek single class me rakhe jate he isi ko view set bolte he
+# ye aur asaan kar deta he database me data ko crud karna isme funtion ki jagah class ka us hota he aur isme sare views ek single class me rakhe jate he isi ko view set bolte he
 # aur isme alag agal url banane ki zarurat nahi padti isme router hota he agar usme class define kardi to url ka kaam router hi karlega
 # aur viewset  method get post aur bhi provide nahi karta ye actions provide karta he jiske andar list() get all records, create() create record, retrieve() get single record, update() update record, partial_update() update record partially, destroy() delete record, ye sab hote he jo ke method ka hi kaam karte he
 # from rest_framework import viewsets 
@@ -195,6 +198,49 @@
 # action ye konsa operation ho raha he list ho rahe ya create ho raha he
 # detail ye bolean return karta he
 
-# class base set
-# JWT
+
+# public private key criptography
+# isme 2 keys generate hoti he public key aur private key
+# public key
+# public key isko kisi ko bhi bata sakte lekin isse jo data aayga vo private key se milke hi aayga
+# priavte key 
+# priavte key iski information bas apan ko pata honi chahiye
+
+# state less and state full
+# state less iski information ham database me ya file me store karke nahi rakhte exp http ye stateless mechanisym pe work karta he 
+# state full iski information database aur file me store hoti he
+
+# Encryption and decryption
+# Encryption is the process of converting readable data (plaintext) into an unreadable format (ciphertext), while decryption is the reverse process, converting ciphertext back into plaintext
+
+# JWT (json web token) authentication
+# JWT ye bhi public private criptography ki tarah kaam karta he aur state less hota he
+# isme kya hota he isme token generate hota to jiske paas bhi token hota he vo authenticate kar sakta he
+# jwt me kya hota he ye aapka data leta he usko encript kar dete he aur kon decript karega ye server decide karega
+# iske token me 3 parts hote he 1 part me kya hota he ki ye batata he konsi algoritym use kar rahe he kyuke isme bohot sare algoritym hoti he 2 part batata he ki kya informtion he aapke paas me 3 part signature hota he ye check karta he ki data me kuch change to nahi he
+# authentication and authorization in dono ye different hota he authentication matlab varify karna aur authorization matlab kisi cheez ko access kar pana
+# aur isme har token ke sath expiry time bhi dal sakte he ki kab token expire hoga
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# download postman
+
+
+
+
+
 
