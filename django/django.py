@@ -153,6 +153,7 @@
 # complex datatype (table) ko python datatype me convert karna fir usko json format me convert karne ko serialization bolte he
 
 # de-serializer in django
+# iski zarurat tab padti he jab object (data) ko database me add karna ho ya delete karna ho ya update karna ho
 # serializer isi ko opposite dardo to de-serializer bolte he yani json se python datatype fir complex datatype me convert karne ko bolte he
 
 # nested serializer
