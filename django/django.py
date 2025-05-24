@@ -223,6 +223,11 @@
 # aur isme har token ke sath expiry time bhi dal sakte he ki kab token expire hoga
 
 
+# product variant 
+# product variant matlab 1 product alag alag types for exp one shirt have different types like different color and different size etc
+
+# sku
+# sku ye ek code hota jo ke har product ke liye alag hota he
 
 
 
