@@ -230,8 +230,11 @@
 # sku ye ek code hota jo ke har product ke liye alag hota he
 
 
+# source
+# pure website ya app ko source bolte he
 
-
+# resource
+# matlab aapko kuch cheez use karne ko mili usi ko resource bolte he
 
 
 
