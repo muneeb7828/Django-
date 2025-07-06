@@ -17,17 +17,17 @@
 # isiko role base access control (RBAC) bolte he
 
 
-# facebook pe aapne ek js developers group banaya jiske andar aap admin jiske andar aur memebres add kar skate he member is group me post kar skate he aur iske andar kitni post aap use delete kar sakte ho taki aap admin ho iske andar jo members he vo bas psot kar sakte he
+# facebook pe aapne ek js developers group banaya jiske andar aap admin ho jiske andar aur members add kar sakte he member is group me post kar sakte he aur iske andar kitni post aap delete kar sakte ho taki aap admin ho iske andar jo members he vo bas post kar sakte he
 # aur facebook pe ek aur group he python developers name se jispe aap sirf member ho to aap sirf post kar sakte he
 
 
 # fine grained base access control
-# ye hota he jese aaki bloging website he jispe aap admin ho aur usme bohot sare users he aur aapne ek user ko admin nbana diya aur user ko mderator bana diya to usi ko fine grained base access control bolte he
+# ye hota he jese apki bloging website he jispe aap admin ho aur usme bohot sare users he aur aapne ek user ko admin bana diya aur user ko moderator bana diya to usi ko fine grained base access control bolte he
 
 
 # attribute base access control
 
-# aapne ek blog banaya aur usme aapne ek attribute daal diya marketing name se to marketing team ke editors  he bas ho hi is blog ko edit kar sakte he 
+# aapne ek blog banaya aur usme aapne ek attribute daal diya marketing name se to marketing team ke editors  he bas vo hi is blog ko edit kar sakte he 
 # aur aapne ek aur blog banaya aur aapne isko attribute de diya dev to dev team ke members hi isko dekh sakte he marketing team ke members nahi dekh sakte
 # aur aapne ek aur blog banaya aur aapne isko attribute de diya dev aur marketing to dono team ke members isko dekh sakte he
 # aur is tarike se attribute dete he attribute:[dev,marketing]
