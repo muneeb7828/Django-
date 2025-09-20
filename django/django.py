@@ -218,10 +218,10 @@
 # JWT ye bhi public private criptography ki tarah kaam karta he aur state less hota he
 # isme kya hota he isme token generate hota to jiske paas bhi token hota he vo authenticate kar sakta he
 # jwt me kya hota he ye aapka data leta he usko encript kar dete he aur kon decript karega ye server decide karega
-# iske token me 3 parts hote he 1 part me kya hota he ki ye batata he konsi algoritym use kar rahe he kyuke isme bohot sare algoritym hoti he 2 part batata he ki kya informtion he aapke paas me 3 part signature hota he ye check karta he ki data me kuch change to nahi he
-# authentication and authorization in dono ye different hota he authentication matlab varify karna aur authorization matlab kisi cheez ko access kar pana
+# iske token me 3 parts hote he 1 part me kya hota he ki ye batata he konsi algoritym use kar rahe he kyuke isme bohot sare algoritym hoti he 2 part batata he ki kya informtion he aapke paas me 3 part signature hota he iske andar private key hota he
 # aur isme har token ke sath expiry time bhi dal sakte he ki kab token expire hoga
 
+# authentication and authorization in dono me ye different hota he authentication matlab varify karna aur authorization matlab kisi cheez ko access kar pana
 
 # product variant 
 # product variant matlab 1 product alag alag types for exp one shirt have different types like different color and different size etc
